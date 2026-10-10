@@ -1,0 +1,18 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Client",
+      "type": "dotnet",
+      "request": "launch",
+      "projectPath": "${workspaceFolder}/Client/Client.csproj"
+    },
+    {
+      "name": "Server",
+      "type": "dotnet",
+      "request": "launch",
+      "projectPath": "${workspaceFolder}/Server/Server.csproj",
+      "launchConfigurationId": "TargetFramework=;http"
+    }
+  ]
+}

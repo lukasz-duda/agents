@@ -1,0 +1,25 @@
+@url=http://localhost:5000
+
+### Agent card
+GET {{url}}/.well-known/agent-card.json
+
+### A2A - echo
+POST {{url}}/echo
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "id": "test-1",
+  "method": "SendMessage",
+  "params": {
+    "message": {
+      "messageId": "test-message-1",
+      "role": "ROLE_USER",
+      "parts": [
+        {
+          "text": "abc-123"
+        }
+      ]
+    }
+  }
+}
